@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import "./landing.css";
 
 export const metadata: Metadata = {
-  title: "Commerce AI — AI-покупатель, который покупает за вас",
+  title: "Commerce AI — the AI shopper that buys for you",
   description:
-    "Скажите, что нужно — агент найдёт в магазинах вашей страны, сравнит, положит в корзину и оформит заказ. Оплату подтверждаете вы.",
+    "Say what you need — the agent searches stores in your country, compares, adds to cart and checks out. You only confirm the payment.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ru">
+    <html lang="en">
       <body>{children}</body>
     </html>
   );

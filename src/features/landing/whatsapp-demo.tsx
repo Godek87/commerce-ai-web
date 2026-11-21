@@ -3,11 +3,11 @@
 import { useCycle } from "./use-cycle";
 
 const messages = [
-  { from: "me", text: "Закажи корм для кота, как в прошлый раз", time: "10:24" },
-  { from: "agent", text: "Нашёл тот же корм, 4 кг — ₺689 на Trendyol (было ₺749).", time: "10:24" },
-  { from: "agent", text: "Доставка завтра на ваш адрес. Оформить?", time: "10:24" },
-  { from: "me", text: "Да", time: "10:25" },
-  { from: "agent", text: "✓ Корзина и адрес готовы. Ссылка на оплату ниже.", time: "10:25" },
+  { from: "me", text: "Order cat food, same as last time", time: "10:24" },
+  { from: "agent", text: "Found the same food, 4 kg — ₺689 on Trendyol (was ₺749).", time: "10:24" },
+  { from: "agent", text: "Delivery to your address tomorrow. Place the order?", time: "10:24" },
+  { from: "me", text: "Yes", time: "10:25" },
+  { from: "agent", text: "✓ Cart and address ready. Payment link below.", time: "10:25" },
 ] as const;
 
 // Extra ticks at the end keep the full thread on screen before restarting.
@@ -46,7 +46,7 @@ export function WhatsAppDemo() {
           </div>
         )}
       </div>
-      <div className="lp-wa-input">Сообщение</div>
+      <div className="lp-wa-input">Message</div>
     </div>
   );
 }

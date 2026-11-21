@@ -177,7 +177,7 @@ h1, h2, h3 { letter-spacing: -0.03em; margin: 0; }
 .lp-wa-typing i:nth-child(2) { animation-delay: .15s; }
 .lp-wa-typing i:nth-child(3) { animation-delay: .3s; }
 .lp-wa-input { background: #ece5dc; padding: 0 14px 14px; }
-.lp-wa-input::before { content: "Сообщение"; display: block; background: #fff; border-radius: 999px; padding: 12px 16px; color: #999; font-size: 14px; }
+.lp-wa-input::before { content: "Message"; display: block; background: #fff; border-radius: 999px; padding: 12px 16px; color: #999; font-size: 14px; }
 .lp-wa-input { font-size: 0; }
 .lp-wa-side { width: 320px; background: #fff; border-radius: 24px; padding: 28px; box-shadow: 0 20px 40px -24px #0003; }
 .lp-wa-side h3 { font-size: 26px; font-weight: 500; line-height: 1.2; }

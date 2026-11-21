@@ -3,10 +3,10 @@
 import { useCycle } from "./use-cycle";
 
 const frames = [
-  { badge: "Слушаю…", caption: "«Найди льняной пиджак на лето, размер M»", emoji: "🎙", price: "" },
-  { badge: "Нашёл 14 вариантов", caption: "Лучший по цене и отзывам — бежевый лён.", emoji: "🧥", price: "₺1 890" },
-  { badge: "Добавлено в корзину · M", caption: "Подобрать к нему льняные брюки?", emoji: "🧥", price: "₺1 890" },
-  { badge: "Готово к оплате", caption: "Адрес и карта подставлены. Подтвердите.", emoji: "✅", price: "₺1 890" },
+  { badge: "Listening…", caption: "“Find a linen summer blazer, size M”", emoji: "🎙", price: "" },
+  { badge: "Found 14 options", caption: "Best on price and reviews — beige linen.", emoji: "🧥", price: "₺1 890" },
+  { badge: "Added to cart · M", caption: "Want matching linen trousers?", emoji: "🧥", price: "₺1 890" },
+  { badge: "Ready to pay", caption: "Address and card filled in. Please confirm.", emoji: "✅", price: "₺1 890" },
 ];
 
 export function PhoneDemo() {
@@ -21,8 +21,8 @@ export function PhoneDemo() {
           <span className="lp-phone-emoji">{f.emoji}</span>
           {f.price && (
             <span className="lp-phone-price">
-              <small>ЛЕТНИЙ ЛЁН</small>
-              <strong>Пиджак, бежевый</strong>
+              <small>SUMMER LINEN</small>
+              <strong>Blazer, beige</strong>
               {f.price}
             </span>
           )}
@@ -31,7 +31,7 @@ export function PhoneDemo() {
           {f.caption}
         </p>
         <span className="lp-voice-ring" />
-        <span className="lp-online">● Онлайн</span>
+        <span className="lp-online">● Online</span>
         <div className="lp-phone-controls">
           <span className="lp-mic">🎙</span>
           <span className="lp-close">✕</span>

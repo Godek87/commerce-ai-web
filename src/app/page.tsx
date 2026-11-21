@@ -13,14 +13,14 @@ export default function Home() {
           commerce<span>ai</span>
         </a>
         <nav>
-          <a href="#how">Как это работает</a>
+          <a href="#how">How it works</a>
           <a href="#whatsapp">
-            WhatsApp <em>Скоро</em>
+            WhatsApp <em>Soon</em>
           </a>
           <a href="#faq">FAQ</a>
         </nav>
         <a className="lp-btn lp-btn--dark" href={CHAT_URL}>
-          Начать
+          Get started
         </a>
       </header>
 
@@ -35,27 +35,27 @@ export default function Home() {
             </span>
             <span>
               <b>★★★★★</b>
-              <small>Ищет в магазинах вашей страны</small>
+              <small>Shops stores in your country</small>
             </span>
           </div>
           <h1>
-            AI-покупатель,
+            The AI shopper
             <br />
-            который <span className="lp-grad">покупает за вас</span>
+            that <span className="lp-grad">buys for you</span>
           </h1>
           <p className="lp-lead">
-            Напишите или скажите, что нужно. Агент найдёт, сравнит, положит в корзину и оформит заказ.
-            Вам остаётся только подтвердить оплату.
+            Type or say what you need. The agent finds it, compares, adds it to the cart and checks out.
+            All you do is confirm the payment.
           </p>
           <div className="lp-actions">
             <a className="lp-btn" href={CHAT_URL}>
-              Попробовать в чате
+              Try it in chat
             </a>
             <a className="lp-btn lp-btn--ghost" href="#how">
-              Как это работает
+              How it works
             </a>
           </div>
-          <p className="lp-stores-label">Покупает в любимых магазинах</p>
+          <p className="lp-stores-label">Shops at your favorite stores</p>
           <div className="lp-marquee" aria-label={stores.join(", ")}>
             <div className="lp-marquee-track">
               {[...stores, ...stores, ...stores, ...stores].map((s, i) => (
@@ -71,22 +71,22 @@ export default function Home() {
             <h2>
               <span className="lp-grad">AI</span> Shopper
             </h2>
-            <p>Одна фраза — и заказ готов</p>
-            <button type="button" className="lp-play" aria-label="Видео скоро">
+            <p>One sentence — and the order is ready</p>
+            <button type="button" className="lp-play" aria-label="Video coming soon">
               ▶
             </button>
-            <span className="lp-watch">Видео скоро</span>
+            <span className="lp-watch">Video coming soon</span>
             <div className="lp-float lp-float--1">
-              <small>Вкладок открыть</small>
+              <small>Tabs to open</small>
               <strong>0</strong>
             </div>
             <div className="lp-float lp-float--2">
-              <small>От запроса до корзины</small>
-              <strong>1 фраза</strong>
+              <small>Request to cart</small>
+              <strong>1 sentence</strong>
             </div>
             <div className="lp-float lp-float--3">
-              <small>Оплата</small>
-              <strong>только с вами</strong>
+              <small>Payment</small>
+              <strong>only with you</strong>
             </div>
           </div>
         </section>
@@ -95,10 +95,10 @@ export default function Home() {
         <section className="lp-card lp-advisor" id="how">
           <div>
             <p className="lp-kicker">● AI Shopper</p>
-            <h2>Разговор превращается в покупку.</h2>
+            <h2>Conversation becomes a purchase.</h2>
             <p className="lp-muted">
-              Как личный байер в кармане. Говорите или пишите — агент слушает, подбирает и доводит
-              заказ до оплаты, на вашем языке.
+              Like a personal buyer in your pocket. Talk or type — the agent listens, picks and takes
+              the order all the way to payment, in your language.
             </p>
             <hr />
             <div className="lp-steps">
@@ -111,7 +111,7 @@ export default function Home() {
               ))}
             </div>
             <a className="lp-btn" href={CHAT_URL}>
-              Попробовать
+              Try it
             </a>
           </div>
           <PhoneDemo />
@@ -121,32 +121,32 @@ export default function Home() {
 
         {/* WHATSAPP */}
         <section className="lp-card lp-wa-section" id="whatsapp">
-          <h2>Покупайте прямо из WhatsApp</h2>
+          <h2>Shop right from WhatsApp</h2>
           <p className="lp-muted lp-center">
-            Без приложений и сайтов. Напишите агенту, как другу — он найдёт, оформит и пришлёт ссылку
-            на оплату.
+            No apps, no websites. Message the agent like a friend — it finds, checks out and sends you
+            a payment link.
           </p>
           <div className="lp-wa-row">
             <WhatsAppDemo />
             <div className="lp-wa-side">
-              <p className="lp-kicker lp-kicker--green">● СКОРО</p>
-              <h3>Повторные покупки в одно сообщение</h3>
+              <p className="lp-kicker lp-kicker--green">● SOON</p>
+              <h3>Repeat orders in one message</h3>
               <p className="lp-muted">
-                Агент помнит, что вы брали раньше, и находит лучшую цену сегодня.
+                The agent remembers what you bought before and finds today's best price.
               </p>
               <ul>
-                <li>Голосовые сообщения</li>
-                <li>Фото вместо описания</li>
-                <li>Отслеживание заказа</li>
+                <li>Voice messages</li>
+                <li>Photos instead of descriptions</li>
+                <li>Order tracking</li>
               </ul>
-              <span className="lp-flow">Сообщение → поиск → корзина → оплата</span>
+              <span className="lp-flow">Message → search → cart → payment</span>
             </div>
           </div>
         </section>
 
         {/* FAQ */}
         <section className="lp-card lp-faq" id="faq">
-          <h2>Вопросы</h2>
+          <h2>FAQ</h2>
           {faq.map((f) => (
             <details key={f.q}>
               <summary>{f.q}</summary>
@@ -157,14 +157,14 @@ export default function Home() {
 
         {/* CTA */}
         <section className="lp-card lp-cta">
-          <h2>Попробуйте на своей покупке</h2>
+          <h2>Try it on your next purchase</h2>
           <ul>
-            <li>✓ Бесплатно в раннем доступе</li>
-            <li>✓ Работает в браузере</li>
-            <li>✓ Оплату подтверждаете вы</li>
+            <li>✓ Free during early access</li>
+            <li>✓ Works in your browser</li>
+            <li>✓ You confirm the payment</li>
           </ul>
           <a className="lp-btn" href={CHAT_URL}>
-            Открыть веб-чат
+            Open web chat
           </a>
         </section>
       </main>
@@ -172,7 +172,7 @@ export default function Home() {
       <footer className="lp-footer">
         <span>© 2026 Commerce AI</span>
         <span>
-          <a href="#">Условия</a> · <a href="#">Конфиденциальность</a>
+          <a href="#">Terms</a> · <a href="#">Privacy</a>
         </span>
       </footer>
     </div>

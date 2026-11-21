@@ -11,12 +11,12 @@ export type DemoProduct = {
 };
 
 export const products: DemoProduct[] = [
-  { id: "p1", title: "Кроссовки беговые", store: "Trendyol", price: "₺1 899", emoji: "👟", tint: "#eef0ff" },
-  { id: "p2", title: "Кроссовки белые, кожа", store: "Hepsiburada", price: "₺2 349", oldPrice: "₺2 790", emoji: "👟", tint: "#f3f0ff" },
-  { id: "p3", title: "Кеды canvas", store: "Trendyol", price: "₺1 290", emoji: "🥿", tint: "#f0f7ff" },
-  { id: "p4", title: "Кроссовки city white", store: "Hepsiburada", price: "₺1 749", oldPrice: "₺2 190", emoji: "👟", tint: "#eefaf4" },
-  { id: "p5", title: "Слипоны летние", store: "Trendyol", price: "₺990", emoji: "🩴", tint: "#fff6ec" },
-  { id: "p6", title: "Кроссовки trail", store: "Hepsiburada", price: "₺2 590", emoji: "🥾", tint: "#f6f6f6" },
+  { id: "p1", title: "Running sneakers", store: "Trendyol", price: "₺1 899", emoji: "👟", tint: "#eef0ff" },
+  { id: "p2", title: "White leather sneakers", store: "Hepsiburada", price: "₺2 349", oldPrice: "₺2 790", emoji: "👟", tint: "#f3f0ff" },
+  { id: "p3", title: "Canvas sneakers", store: "Trendyol", price: "₺1 290", emoji: "🥿", tint: "#f0f7ff" },
+  { id: "p4", title: "City white sneakers", store: "Hepsiburada", price: "₺1 749", oldPrice: "₺2 190", emoji: "👟", tint: "#eefaf4" },
+  { id: "p5", title: "Summer slip-ons", store: "Trendyol", price: "₺990", emoji: "🩴", tint: "#fff6ec" },
+  { id: "p6", title: "Trail sneakers", store: "Hepsiburada", price: "₺2 590", emoji: "🥾", tint: "#f6f6f6" },
 ];
 
 /** Product the agent picks in the storyline. */
@@ -31,26 +31,26 @@ export type StoryStage = {
 };
 
 export const story: StoryStage[] = [
-  { key: "ask", tab: "Запрос", headline: "Вы просто пишете, что нужно.", bubble: "Белые кроссовки на лето, 42 размер, до ₺2 000", from: "user" },
-  { key: "search", tab: "Поиск", headline: "Агент обходит магазины за вас.", bubble: "Смотрю Trendyol и Hepsiburada…", from: "agent" },
-  { key: "compare", tab: "Сравнение", headline: "Сравнивает цены, размеры и отзывы.", bubble: "Лучший вариант: city white, −20%, 4.7★", from: "agent" },
-  { key: "cart", tab: "Корзина", headline: "Кладёт в корзину нужный размер.", bubble: "Добавил в корзину · размер 42", from: "agent" },
-  { key: "address", tab: "Адрес", headline: "Подставляет адрес и карту.", bubble: "Доставка: ваш адрес · карта •• 4242", from: "agent" },
-  { key: "done", tab: "Готово", headline: "Вам остаётся нажать «Оплатить».", bubble: "Всё готово. Подтвердите оплату ✓", from: "agent" },
+  { key: "ask", tab: "Ask", headline: "You just say what you need.", bubble: "White summer sneakers, size 42, under ₺2 000", from: "user" },
+  { key: "search", tab: "Search", headline: "The agent browses stores for you.", bubble: "Checking Trendyol and Hepsiburada…", from: "agent" },
+  { key: "compare", tab: "Compare", headline: "It compares prices, sizes and reviews.", bubble: "Best pick: city white, −20%, 4.7★", from: "agent" },
+  { key: "cart", tab: "Cart", headline: "It adds the right size to the cart.", bubble: "Added to cart · size 42", from: "agent" },
+  { key: "address", tab: "Address", headline: "It fills in your address and card.", bubble: "Delivery: your address · card •• 4242", from: "agent" },
+  { key: "done", tab: "Done", headline: "All that's left is tapping “Pay”.", bubble: "All set. Confirm the payment ✓", from: "agent" },
 ];
 
 export const stores = ["Trendyol", "Hepsiburada", "ÇiçekSepeti"];
 
 export const steps = [
-  { n: "01", title: "Говорите как с человеком", copy: "Текстом или голосом, на своём языке. Можно фото того, что нужно." },
-  { n: "02", title: "Агент ищет и сравнивает", copy: "Обходит локальные магазины вашей страны, отбирает лучшие предложения." },
-  { n: "03", title: "Оформляет заказ", copy: "Корзина, размер, адрес и карта — сам. Оплату подтверждаете только вы." },
+  { n: "01", title: "Talk like you would to a person", copy: "Text or voice, in your language. Or just send a photo of what you need." },
+  { n: "02", title: "The agent searches and compares", copy: "It browses local stores in your country and picks the best offers." },
+  { n: "03", title: "It places the order", copy: "Cart, size, address and card — handled. Only you confirm the payment." },
 ];
 
 export const faq = [
-  { q: "Нужно ли что-то устанавливать?", a: "Нет. Веб-чат работает в браузере. Расширение для Chrome и WhatsApp — по желанию." },
-  { q: "Агент может оплатить без меня?", a: "Нет. Агент доходит до шага оплаты и останавливается. Код CVV и подтверждение — всегда за вами." },
-  { q: "Как хранятся адрес и карта?", a: "Данные карты шифруются, CVV не сохраняется. Адрес спрашиваем один раз." },
-  { q: "В каких магазинах ищет?", a: "В локальных маркетплейсах вашей страны — страна определяется по номеру телефона." },
-  { q: "Сколько это стоит?", a: "Сейчас бесплатно, пока идёт ранний доступ." },
+  { q: "Do I need to install anything?", a: "No. The web chat runs in your browser. The Chrome extension and WhatsApp are optional." },
+  { q: "Can the agent pay without me?", a: "No. The agent stops at the payment step. The CVV and the final confirmation are always yours." },
+  { q: "How are my address and card stored?", a: "Card details are encrypted and the CVV is never saved. We ask for your address only once." },
+  { q: "Which stores does it search?", a: "Local marketplaces in your country — detected from your phone number." },
+  { q: "How much does it cost?", a: "It's free during early access." },
 ];
