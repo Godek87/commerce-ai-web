@@ -3,7 +3,8 @@ import { PhoneDemo } from "@/features/landing/phone-demo";
 import { Storyline } from "@/features/landing/storyline";
 import { WhatsAppDemo } from "@/features/landing/whatsapp-demo";
 
-const CHAT_URL = "/chat/";
+// Web app (commerce-web) address; set NEXT_PUBLIC_APP_URL in Cloudflare, e.g. https://app.example.com
+const CHAT_URL = process.env.NEXT_PUBLIC_APP_URL ? `${process.env.NEXT_PUBLIC_APP_URL}/chat` : "/chat/";
 
 export default function Home() {
   return (
