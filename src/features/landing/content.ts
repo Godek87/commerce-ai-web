@@ -11,9 +11,9 @@ export type DemoProduct = {
 };
 
 export const products: DemoProduct[] = [
-  { id: "p1", title: "Running sneakers", store: "Trendyol", price: "₺1 899", emoji: "👟", tint: "#eef0ff" },
-  { id: "p2", title: "White leather sneakers", store: "Hepsiburada", price: "₺2 349", oldPrice: "₺2 790", emoji: "👟", tint: "#f3f0ff" },
-  { id: "p3", title: "Canvas sneakers", store: "Trendyol", price: "₺1 290", emoji: "🥿", tint: "#f0f7ff" },
+  { id: "p1", title: "Running sneakers", store: "Trendyol", price: "₺1 899", emoji: "👟", tint: "#fff1ea" },
+  { id: "p2", title: "White leather sneakers", store: "Hepsiburada", price: "₺2 349", oldPrice: "₺2 790", emoji: "👟", tint: "#fff6e5" },
+  { id: "p3", title: "Canvas sneakers", store: "Trendyol", price: "₺1 290", emoji: "🥿", tint: "#f1f6f0" },
   { id: "p4", title: "City white sneakers", store: "Hepsiburada", price: "₺1 749", oldPrice: "₺2 190", emoji: "👟", tint: "#eefaf4" },
   { id: "p5", title: "Summer slip-ons", store: "Trendyol", price: "₺990", emoji: "🩴", tint: "#fff6ec" },
   { id: "p6", title: "Trail sneakers", store: "Hepsiburada", price: "₺2 590", emoji: "🥾", tint: "#f6f6f6" },
